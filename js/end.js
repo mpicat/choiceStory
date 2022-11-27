@@ -27,11 +27,11 @@ function getCharacterImg() {
     let characterChoosed = localStorage.getItem('Nom');
     console.log(characterChoosed);
     if (characterChoosed == 'Jack') {
-        imgElement.src = '/img/jackFull.png';
+        imgElement.src = 'img/jackFull.png';
         imgElement.alt = 'Jack';
         console.log("if");
     } else {
-        imgElement.src = '/img/wendyFull.png';
+        imgElement.src = 'img/wendyFull.png';
         imgElement.alt = 'Wendy';
         console.log("else");
     }

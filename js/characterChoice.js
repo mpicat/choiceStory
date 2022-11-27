@@ -34,6 +34,6 @@ function chooseACharacter(name, img) {
 const btnWendy = document.getElementById('btn-wendy');
 const btnJack = document.getElementById('btn-jack');
 
-btnWendy.addEventListener('click', () => chooseACharacter('Wendy', '/img/wendy.png'));
-btnJack.addEventListener('click', () => chooseACharacter('Jack', '/img/jack.png'));
+btnWendy.addEventListener('click', () => chooseACharacter('Wendy', 'img/wendy.png'));
+btnJack.addEventListener('click', () => chooseACharacter('Jack', 'img/jack.png'));
 
