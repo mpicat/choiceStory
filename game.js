@@ -7,10 +7,12 @@ const btnSkipContainerElement = document.getElementById('btn-skip-container');
 const imgContainerElement = document.getElementById('img-container');
 const imgElement = document.getElementById('img-speaker');
 const nameElement = document.getElementById('name');
+const songElement = document.getElementById('themeGame');
 
 let state = {}
 
 function startGame() {
+    songElement.play();
     state = {};
     showTextNode(1);
 }
@@ -152,8 +154,7 @@ function selectOption(option) {
     }
 
     // restart
-    // TODO repasser à <= 0
-    if (nextTextNodeId >= 3) {
+    if (nextTextNodeId <= 0) {
         location.href = "end.html";
     }
 

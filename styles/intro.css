@@ -103,3 +103,25 @@ p {
         display:none;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 9rem;
+    }
+    a {
+        font-size: 3.5rem;
+        font-weight: 300;
+    }
+    .container-start {
+        display: flex;
+        padding-top: 18%;
+    }
+    .warning {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+}

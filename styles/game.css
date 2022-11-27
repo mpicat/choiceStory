@@ -27,6 +27,7 @@ body {
     position: relative;
 }
 
+/* Backgrounds */
 .doorNight {
     background-image: url(../img/doorNightClub.webp);
 }
@@ -76,11 +77,12 @@ body {
 }
 
 .btn {
-    background-color: hsl(200, 100%, 50%);
     border: none;
     border-radius: 5px;
     padding: 10px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px #555 solid;
 }
 
 
@@ -100,7 +102,7 @@ body {
 
 
 /* character */
-#img-container{
+#img-container {
     position: absolute;
     top: -165px;
     left: 30px;
@@ -135,7 +137,6 @@ body {
     background: none;
     border: none;
     font-size: 2.2rem;
-    color: black;
     top: 35px;
     right: -65px;
 }
@@ -147,9 +148,7 @@ i {
 
 /* QTE */
 #qte {
-    position: absolute;
-    top: 8%;
-    right: 5%;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -195,4 +194,97 @@ i {
     border-radius: 6px;
     font-weight: 800;
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* music */
+#themeGame {
+    display: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    #option-buttons {
+        position: relative;
+        gap: 20px;
+        width: 100%;
+        padding: 12% 5%;
+        top: 0;
+        right: 0;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    .characterText-container {
+        bottom: 25px;
+        left: 25px;
+        height: 18%;
+        width: 85%;
+        padding: 22px;
+        font-size: 1.3rem;
+    }
+
+    #img-container {
+        top: -230px;
+        left: 30px;
+        height: 230px;
+        width: 230px;
+    }
+
+    #name {
+        width: 270px;
+        padding: 4px;
+        top: -20px;
+        font-size: 1.4rem;
+    }
+
+    #btn-skip {
+        font-size: 2.5rem;
+        top: 35%;
+        right: -65px;
+    }
+
+    #qte {
+        row-gap: 50px;
+    }
+
+    #btn-qte {
+        width: 180px;
+        font-size: 1.6rem;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    #option-buttons {
+        padding: 5% 20%;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .characterText-container {
+        height: 20%;
+        font-size: 1.4rem;
+        padding-top: 25px;
+    }
+
+    #img-container {
+        top: -250px;
+        height: 250px;
+        width: 250px;
+        left: 40px;
+    }
+
+    #name {
+        width: 290px;
+        font-size: 1.5rem;
+    }
+
+    #btn-skip {
+        font-size: 2.7rem;
+        top: 35%;
+    }
 }

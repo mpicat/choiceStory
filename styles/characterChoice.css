@@ -35,6 +35,7 @@ h1 {
 
 .investigators {
     display: flex;
+    justify-content: center;
 }
 
 .character {
@@ -109,4 +110,65 @@ p {
     border-radius: 5px;
     padding: 10px;
     color: white;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        padding-top: 8%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 7%;
+    }
+
+    .character {
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .img-container {
+        height: 210px;
+        width: 210px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        top: -40px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .p {
+        font-size: 1.6rem;
+    }
+
+    .button {
+        font-size: 1.6rem; 
+        padding: 15px;
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    .character {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        top: -50px;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
 }

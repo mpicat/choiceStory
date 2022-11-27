@@ -20,12 +20,12 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
+    justify-content: space-between;
 }
 
 /* left part */
 #container-left {
     position: relative;
-    width: 60vw;
     height: 100vh;
     color: white;
     padding: 30px
@@ -95,12 +95,101 @@ p {
     margin-top: 15vh;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 #btn-leave {
     width: 40vw;
-    text-align: center;
     background-color: transparent;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    color: white;
+    color: hsl(200, 100%, 50%);
+    animation: clignote 2000ms ease-in-out infinite;
+}
+
+@keyframes clignote {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* music */
+#themeEnd {
+    display: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.1rem;
+    }
+
+    h1::after {
+        width: 410px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    #img-container {
+        margin-top: 35vh;
+        height: 40vh;
+    }
+
+    #btn-leave {
+        margin-top: 12vh;
+        font-size: 1.4rem;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h1::after {
+        width: 530px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    #img-container {
+        margin-top: 20vh;
+        height: 55vh;
+    }
+
+    #btn-leave {
+        margin-top: 10vh;
+        font-size: 1.7rem;
+    }
 }
