@@ -5,7 +5,7 @@ export default [
         imgSpeaker: localStorage.getItem('Img'),
         //imgSpeaker: "img/mate.png",
         name: localStorage.getItem('Nom'),
-        //background: 'choiceStory/img/laboratory.webp',
+        background: "laboratory",
         // only if there is a skip, if not remove this line
         skip: 2,
         options: [
@@ -49,6 +49,7 @@ export default [
         text: "succes",
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
+        background:'doorOpens',
         options: [
             {
                 text: 'trade the goo against a sword',

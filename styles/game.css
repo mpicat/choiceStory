@@ -27,6 +27,42 @@ body {
     position: relative;
 }
 
+.doorNight {
+    background-image: url(../img/doorNightClub.webp);
+}
+
+.doorOpens {
+    background-image: url(../img/doorOpens.webp);
+}
+
+.fightInvestigators {
+    background-image: url(../img/fightInvestigators.webp);
+}
+
+.fightMagic {
+    background-image: url(../img/fightMagic.webp);
+}
+
+.headquarters {
+    background-image: url(../img/headquarters.webp);
+}
+
+.intro {
+    background-image: url(../img/intro.webp);
+}
+
+.laboratory {
+    background-image: url(../img/laboratory.webp);
+}
+
+.laboVision {
+    background-image: url(../img/laboVision.webp);
+}
+
+.meetingMagic {
+    background-image: url(../img/meetingMagic.webp);
+}
+
 
 /* buttons choices */
 #option-buttons {
