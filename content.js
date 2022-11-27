@@ -5,7 +5,7 @@ export default [
         imgSpeaker: localStorage.getItem('Img'),
         //imgSpeaker: "img/mate.png",
         name: localStorage.getItem('Nom'),
-        background: "../img/laboratory.webp",
+        background: '../../img/laboratory.webp',
         // only if there is a skip, if not remove this line
         skip: 2,
         options: [

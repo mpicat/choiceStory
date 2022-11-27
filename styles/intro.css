@@ -14,7 +14,7 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/intro.webp");
+    background-image: url(../img/intro.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
