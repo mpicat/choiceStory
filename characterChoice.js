@@ -1,7 +1,7 @@
 function confirmCharacter(name, img) {
     localStorage.setItem('Nom', name);
     localStorage.setItem('Img', img);
-    location.href = "game.html";
+    location.href = "./game.html";
 }
 
 function chooseACharacter(name, img) {
