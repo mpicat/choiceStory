@@ -4,7 +4,7 @@ export default [
         text: "lsqdmkqsbdmkqugfir fkuy ezgfluag zlag zeg armoher hmezrh ùierj ùizer ùyiezrùiy ùierhy ùierh ùyjezrù ùyzjyù yjez rhmeorhzerihtùeolt gzeugt azemt gamzeg tmezg tamhug hhgrm hemrh erh mhzerm hmezrh tmzerhm zhrem hm",
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
-        background: img/laboratory.webp,
+        background: "../img/laboratory.webp",
         // only if there is a skip, if not remove this line
         skip: 2,
         options: [

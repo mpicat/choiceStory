@@ -18,7 +18,7 @@ function startGame() {
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
 
-    containerElement.style.backgroundImage = url(textNode.background);
+    containerElement.style.backgroundImage = `url(${textNode.background})`;
     textElement.innerText = textNode.text;
 
     // presence of a skip button if there re is only dialog
