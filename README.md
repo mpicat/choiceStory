@@ -6,10 +6,10 @@
 <ul>
     <li>id : chiffre // id du texte</li>
     <li>text : texte entre guillemets // texte</li>
-    <li>imgSpeaker : localStorage.getItem('Img') si c'est le joueur qui parle, sinon "img/nom-image.content-type" // image du personnage qui parle</li>
-    <li>name : localStorage.getItem('Nom') si c'est le joueur qui parle, sinon texte entre guillemets // nom du personnage qui parle</li>
+    <li>imgSpeaker : localStorage.getItem('Img') si c'est le joueur qui parle, sinon "img/nom-image.content-type" // image du personnage qui parle, s'il n'y a pas de personnage pour ce texte, supprimer cette ligne pour ce texte</li>
+    <li>name : localStorage.getItem('Nom') si c'est le joueur qui parle, sinon texte entre guillemets // nom du personnage qui parle, s'il n'y a pas de personnage pour ce texte, supprimer cette ligne pour ce texte</li>
     <li>background : nom de l'image de fond d'écran entre guillemets // fond d'écran</li>
-    <li>skip : chiffre // id du prochain texte, s'i 'il n'y a pas de skip, supprimer cette ligne pour ce texte</li>
+    <li>skip : chiffre // id du prochain texte, s'il n'y a pas de skip, supprimer cette ligne pour ce texte</li>
 </ul>
 
 Options // s'il n'y a pas d'options (QTE) supprimer tout ce bloc pour ce texte
