@@ -1,4 +1,4 @@
-import { textNodes } from '../text.js';
+import { textNodes } from '/text.js';
 
 const containerElement = document.getElementById('container');
 const optionButtonsElement = document.getElementById('option-buttons');
