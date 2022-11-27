@@ -1,4 +1,4 @@
-export const textNodes = [
+export default [
     {
         id: 1,
         text: "lsqdmkqsbdmkqugfir fkuy ezgfluag zlag zeg armoher hmezrh ùierj ùizer ùyiezrùiy ùierhy ùierh ùyjezrù ùyzjyù yjez rhmeorhzerihtùeolt gzeugt azemt gamzeg tmezg tamhug hhgrm hemrh erh mhzerm hmezrh tmzerhm zhrem hm",
