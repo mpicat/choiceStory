@@ -1,4 +1,4 @@
-import { textNodes } from '../choiceStory/content.js';
+import { textNodes } from '/../content.js';
 
 const containerElement = document.getElementById('container');
 const optionButtonsElement = document.getElementById('option-buttons');
