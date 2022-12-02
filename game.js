@@ -26,7 +26,14 @@ function showTextNode(textNodeIndex) {
 
     setBg(textNode.background);
 
-    textElement.innerText = textNode.text;
+
+    // presence of a girl version of the text
+    let nameChar = localStorage.getItem('Nom');
+    if (textNode.textGirl && nameChar == 'Wendy') {
+        textElement.innerText = textNode.textGirl;
+    } else {
+        textElement.innerText = textNode.text;
+    }
 
     // presence of a skip button if there re is only dialog
     if (textNode.skip) {
@@ -58,6 +65,11 @@ function showTextNode(textNodeIndex) {
         imgContainerElement.style.display = "none";
         imgElement.style.display = "none";
         nameElement.style.display = "none";
+    }
+
+    // presence of a state in the text
+    if (textNode.setState) {
+        state = Object.assign(state, textNode.setState);
     }
 
     // presence of qte bar if there is an action
@@ -119,6 +131,11 @@ function showTextNode(textNodeIndex) {
         }
 
         qteBtn.addEventListener('click', () => qte());
+    }
+
+    // page of end : bigger window of text
+    if (textNode.end) {
+        document.getElementById("btn-skip-container").style.height = "155px";
     }
     
     // creation options
