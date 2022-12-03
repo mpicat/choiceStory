@@ -510,4 +510,57 @@ export default [
                 nextText: 39
             }],
     },
+    {
+        id: 39,
+        text: `Avec un groupe de Magiques, vous prenez d'assaut le laboratoire principal au centre de la ville. L'affrontement est particulièrement violent, vous ne vous attendiez pas à tant de résistance humaine...`,
+        background: "fightMagic",
+        options: [
+            {
+                text: `Vous êtes submergés... l'opération est un échec...`,
+                statEndChoice: "Doute dans la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 40
+            },
+            {
+                text: `Vous êtes submergés... vous aviez bien fait de prévenir vos collègues de votre arrivée !`,
+                requiredState: (currentState) => currentState.semblant,
+                statEndChoice: "Doute dans la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 41
+            },
+            {
+                text: `Votre arme lourde dérobée va faire des miracles !`,
+                requiredState: (currentState) => currentState.armes,
+                statEndChoice: "Haine des brigadiers",
+                bonusStatEndChoice: 1,
+                nextText: 42
+            }],
+    },
+    {
+        id: 40,
+        text: `Vous êtes emprisonné par les brigadiers vanqueurs. Il semblerait que la Brigade soit peut clémente envers les traîtres. Peut être auriez vous dû mieux choisir votre camp...`,
+        textGirl: `Vous êtes emprisonnée par les brigadiers vanqueurs. Il semblerait que la Brigade soit peut clémente envers les traîtres. Peut être auriez vous dû mieux choisir votre camp...`,
+        background: "fightMagic",
+        end: 1,
+        options: [
+            {
+                text: `Écran des scores`,
+                nextText: -1
+            }],
+    },
+    {
+        id: 41,
+        text: `"Beau travail ${localStorage.getItem('Nom')} ! Grâce à vous nous avons pu éradiquer les cerveaux Magiques de cette cité. Prêt pour votre prochaine mission ?"`,
+        textGirl: `"Beau travail ${localStorage.getItem('Nom')} ! Grâce à vous nous avons pu éradiquer les cerveaux Magiques de cette cité. Prête pour votre prochaine mission ?"`,
+        background: "fightMagic",
+        imgSpeaker: "img/kyle.png",
+        name: "Capitaine Kyle",
+        end: 1,
+        options: [
+            {
+                text: `Écran des scores`,
+                nextText: -1
+            }],
+    },
+    42 A FAIRE
 ]
