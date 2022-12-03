@@ -291,7 +291,7 @@ export default [
                 requiredState: (currentState) => currentState.killMate,
                 statEndChoice: "Loyal à la Brigade",
                 bonusStatEndChoice: 1,
-                nextText: 22
+                nextText: 222
             },
             {
                 text: `Le Capitaine vous semble louche, vous vous enfuyez par la porte d'où vous venez en embarquant une arme lourde sur le côté`,
@@ -299,7 +299,7 @@ export default [
                 setState: { armes: true },
                 statEndChoice: "Doute en l'Humanité",
                 bonusStatEndChoice: 1,
-                nextText: 22
+                nextText: 222
             }
         ],
     },
@@ -364,6 +364,150 @@ export default [
             {
                 text: `Écran des scores`,
                 nextText: -1
+            }],
+    },
+    {
+        id: 22,
+        text: `Vous vous retrouvez maintenant dans les égoûts de la ville. Après quelques pas, vous distinguez dans la pénombre un groupe de personnes qui semblent vous attendre.`,
+        background: "meetingMagic",
+        skip: 30,
+        options: [],
+    },
+    {
+        id: 222,
+        text: `Après plusieurs minutes à vous cacher dans la rue, vous vous rendez compte qu'une jeune femme vous suit'. Vous vous retournez. "Tu me suis depuis la sortie du QG, qu'est ce que tu veux ?"`,
+        background: "intro",
+        imgSpeaker: localStorage.getItem('Img'),
+        name: localStorage.getItem('Nom'),
+        skip: 223,
+        options: [],
+    },
+    {
+        id: 223,
+        text: `"Je suis une amie de Marco, suis moi, je peux t'aider." Puis elle s'éloigne dans une ruelle annexe et s'aventure dans les sous-sols de la ville. Intrigué, vous décidez de la suivre.`,
+        textGirl: `"Je suis une amie de Marco, suis moi, je peux t'aider." Puis elle s'éloigne dans une ruelle annexe et s'aventure dans les sous-sols de la ville. Intriguée, vous décidez de la suivre.`,
+        background: "intro",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Inconnue",
+        skip: 22,
+        options: [],
+    },
+    {
+        id: 30,
+        text: `"Vous... vous êtes des Magiques... C'est quoi ce plan ?..." `,
+        background: "meetingMagic",
+        imgSpeaker: localStorage.getItem('Img'),
+        name: localStorage.getItem('Nom'),
+        skip: 31,
+        options: [],
+    },
+    {
+        id: 31,
+        text: `"On te cherche depuis longtemps ${localStorage.getItem('Nom')}. Je ne sais pas ce que Marco t'as dit, mais si t'as un peu de jugeote ou si tu as écouté tes visions, tu ne peux plus le nier, tu sais que tu n'es pas humain..." `,
+        textGirl: `"On te cherche depuis longtemps ${localStorage.getItem('Nom')}. Je ne sais pas ce que Marco t'as dit, mais si t'as un peu de jugeote ou si tu as écouté tes visions, tu ne peux plus le nier, tu sais que tu n'es pas humaine..." `,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        skip: 32,
+        options: [],
+    },
+    {
+        id: 32,
+        text: `"Tu es un Magique comme tous les brigadiers, c'est pourquoi tu possède ces dons si... spéciaux. Mais tu n'es pas comme les autres, regarde." La jeune femme s'approche de vous et vous regarde droit dans les yeux...`,
+        textGirl: `"Tu es une Magique comme tous les brigadiers, c'est pourquoi tu possède ces dons si... spéciaux. Mais tu n'es pas comme les autres, regarde." La jeune femme s'approche de vous et vous regarde droit dans les yeux...`,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        skip: 33,
+        options: [],
+    },
+    {
+        id: 33,
+        text: `Encore une vision... AAAAAAH... "Mes parents... mes vrais parents ? Tués. Des humains finissent le travail... J'essaye de résister, mais que va faire un enfant de 7 ans face à un commando entier ? Un laboratoire. Des aiguilles..."`,
+        background: "meetingMagic",
+        imgSpeaker: localStorage.getItem('Img'),
+        name: localStorage.getItem('Nom'),
+        skip: 34,
+        options: [],
+    },
+    {
+        id: 34,
+        text: `"Qu... Qu'est ce que c'était ? J'avais complètement perdu ces souvenirs"`,
+        background: "meetingMagic",
+        imgSpeaker: localStorage.getItem('Img'),
+        name: localStorage.getItem('Nom'),
+        skip: 35,
+        options: [],
+    },
+    {
+        id: 35,
+        text: `"Ils ont fait beaucoup d'efforts pour ça. Mais Marco nous a dit que tu avais des visions depuis plusieurs semaines déjà, c'est le signe que nous attendions. Aucun brigadier n'avait pu exprimer de dons magiques depuis la création de la Brigade."`,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        skip: 36,
+        options: [],
+    },
+    {
+        id: 36,
+        text: `"Tu es le symbole du lien entre les brigadiers et les Magiques ${localStorage.getItem('Nom')}. Sans les brigadiers, les Humains ne nous trouverons plus et nous pourrons vivre de nouveau paisiblement tous ensemble..."`,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        skip: 37,
+        options: [],
+    },
+    {
+        id: 37,
+        text: `"Qu'est ce que vous attendez de moi ?"`,
+        background: "meetingMagic",
+        imgSpeaker: localStorage.getItem('Img'),
+        name: localStorage.getItem('Nom'),
+        skip: 38,
+        options: [],
+    },
+    {
+        id: 38,
+        text: `"Nous comptons attaquer le laboratoire où les brigadiers sont 'élevés'. Ici tous les souvenirs des brigadiers sont conservés dans une matrice. Une fois détruite, vous récupérerez tous votre passé, ce qui mettra fin à la traque... Et nous avons besoin de toi pour rentrer dans ce labo"`,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        options: [
+            {
+                text: `Les conduire de bonne volonté`,
+                setState: { bonneVolonte: true },
+                statEndChoice: "Doutes en la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 39
+            },
+            {
+                text: `Faire semblant de se rallier à leur cause, mais les pièger dès que possible`,
+                setState: { semblant: true },
+                statEndChoice: "Loyal à la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 39
+            }],
+    },
+    {
+        id: 39,
+        text: `"Nous comptons attaquer le laboratoire où les brigadiers sont 'élevés'. Ici tous les souvenirs des brigadiers sont conservés dans une matrice. Une fois détruite, vous récupérerez tous votre passé, ce qui mettra fin à la traque... Et nous avons besoin de toi pour rentrer dans ce labo"`,
+        background: "meetingMagic",
+        imgSpeaker: "img/sorcerer3.png",
+        name: "Jeune Magique",
+        options: [
+            {
+                text: `Les conduire de bonne volonté`,
+                setState: { bonneVolonte: true },
+                statEndChoice: "Doutes en la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 39
+            },
+            {
+                text: `Faire semblant de se rallier à leur cause, mais les pièger dès que possible`,
+                setState: { semblant: true },
+                statEndChoice: "Loyal à la Brigade",
+                bonusStatEndChoice: 1,
+                nextText: 39
             }],
     },
 ]
