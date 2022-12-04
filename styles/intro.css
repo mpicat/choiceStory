@@ -121,7 +121,7 @@ a {
     }
     .container-start {
         display: flex;
-        padding-top: 18%;
+        padding-top: 14%;
     }
     .warning {
         display: none;
@@ -137,6 +137,6 @@ a {
 @media screen and (min-width: 992px) {
     .container-start p {
         font-size: 1.6rem;
-        padding-top: 400px;
+        padding-top: 300px;
     }
 }
