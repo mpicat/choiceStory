@@ -137,5 +137,6 @@ a {
 @media screen and (min-width: 992px) {
     .container-start p {
         font-size: 1.6rem;
+        padding-top: 250px;
     }
 }
