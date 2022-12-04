@@ -1,5 +1,9 @@
 # Choice Story : Jeu dont vous êtes le héros
 
+<ul>
+    <li>L'application marche parfaitement avec le son sur Chrome</li>
+    <li>Le son est bloqué sur firefox</li>
+</ul>
 
 
 ## Fichier content
