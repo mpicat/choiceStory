@@ -20,13 +20,14 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* left part */
 #container-left {
     position: relative;
-    height: 100vh;
+    width: 100vw;
+    height: 45vh;
     color: white;
     padding: 30px
 }
@@ -35,9 +36,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60vw;
-    height: 100vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 95%, transparent);
+    width: 100vw;
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 95%, transparent);
 }
 
 h1 {
@@ -55,21 +56,16 @@ h1::after {
     left: -30px;
     bottom: 10px;
     height: 2px;
-    width: 350px;
+    width: 110%;
     border-bottom: 1px solid hsl(200, 100%, 50%);
 }
 
 section {
-    padding: 0 20px;
-    height: 60vh;
+    padding: 10px 20px 0;
     row-gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#container-left {
-    width: 40vw;
 }
 
 .statEnd {
@@ -90,18 +86,17 @@ p {
 
 /* right part */
 .container-right {
-    width: 40vw;
-    height: 100vw;
+    width: 100vw;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #img-container {
-    height: 70vh;
+    height: 42vh;
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
 }
 
 .btn-container {
@@ -110,11 +105,9 @@ p {
 }
 
 #btn-leave {
-    width: 40vw;
+    width: 100vw;
     background-color: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
     color: hsl(200, 100%, 50%);
     animation: clignote 2000ms ease-in-out infinite;
     cursor: pointer;
@@ -145,31 +138,26 @@ p {
     }
 
     h1::after {
-        width: 410px;
+        width: 55%;
     }
 
     section {
-        padding: 0;
+        padding: 40px 30px 0;
         row-gap: 20px;
-        padding-left: 20%;
     }
 
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    p {
+    h3, p {
         font-size: 1.4rem;
     }
 
     #img-container {
-        margin-top: 35vh;
-        height: 40vh;
+        height: 45vh;
+        margin-top: 10px;
     }
 
     #btn-leave {
-        margin-top: 12vh;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        margin-top: 20px;
     }
 }
 
@@ -181,29 +169,23 @@ p {
     }
 
     h1::after {
-        width: 105%;
+        width: 65%;
     }
 
-    h3 {
+    h3, p {
         font-size: 1.6rem;
     }
 
-    p {
-        font-size: 1.6rem;
-    }
-
-    #img-container {
-        margin-top: 20vh;
-        height: 55vh;
-    }
-
-    #btn-leave {
-        margin-top: 10vh;
-        font-size: 1.7rem;
+    #container-left, .container-fade {
+        height: 40vh;
     }
 
     section {
-        padding: 0 5%;
-        padding-left: 20%;
+        padding: 40px 35% 0;
+    }
+
+    #btn-leave {
+        font-size: 2rem;
+        margin-top: 20px;
     }
 }

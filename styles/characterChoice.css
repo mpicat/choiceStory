@@ -21,7 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 25px;
+    row-gap: 30px;
 }
 
 h1 {
@@ -35,21 +36,22 @@ h1 {
 
 .investigators {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
 }
 
 .character {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px #555 solid;
     color: white;
-    padding: 10px;
-    margin: 25px 15px;
+    padding: 15px;
+    width: 70%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 50%;
     cursor: pointer;
 }
 
@@ -66,7 +68,7 @@ img {
 
 h2 {
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 5px;
     font-family: 'Teko', sans-serif;
     font-size: 2.2rem;
@@ -92,18 +94,19 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 
 .p {
     color: white;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .yesNo-container {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 30px;
 }
 
 .button {
@@ -113,17 +116,17 @@ p {
     padding: 10px;
     color: white;
     cursor: pointer;
+    font-size: 1.1rem;
 }
 
 /* tablet */
 @media screen and (min-width: 768px) {
     .container {
-        padding-top: 8%;
+        padding-top: 40px;
     }
 
     h1 {
         font-size: 4.5rem;
-        margin-bottom: 7%;
     }
 
     .character {
@@ -158,12 +161,20 @@ p {
 
 /* desktop */
 @media screen and (min-width: 992px) {
+    .investigators {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .character {
         width: 30%;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     h2 {
@@ -172,6 +183,14 @@ p {
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .choice-container {
+        row-gap: 80px;
+    }
+
+    .yesNo-container {
+        column-gap: 60px;
     }
 }

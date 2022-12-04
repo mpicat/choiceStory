@@ -382,7 +382,8 @@ export default [
     },
     {
         id: 223,
-        text: `"Je suis une amie de Marco, suis moi, je peux t'aider." Puis elle s'éloigne dans une ruelle annexe et s'aventure dans les sous-sols de la ville. Á court d'options, vous décidez de la suivre.`,        background: "intro",
+        text: `"Je suis une amie de Marco, suis moi, je peux t'aider." Puis elle s'éloigne dans une ruelle annexe et s'aventure dans les sous-sols de la ville. Á court d'options, vous décidez de la suivre.`,        
+        background: "intro",
         imgSpeaker: "img/sorcerer3.png",
         name: "Inconnue",
         skip: 22,

@@ -20,7 +20,7 @@ function chooseACharacter(name, img) {
     btnOk.addEventListener('click', () => confirmCharacter(name, img));
     btnNo.addEventListener('click', () => location.href = "characterChoice.html");
 
-    p.innerHTML = `Souhaitez vous démarrer la partie avec ${name} ?`;
+    p.innerHTML = `Souhaitez vous démarrer la partie<br> avec ${name} ?`;
     btnOk.innerHTML = 'Oui';
     btnNo.innerHTML = 'Non';
 

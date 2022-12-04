@@ -97,7 +97,7 @@ function showTextNode(textNodeIndex) {
         // function for QTE to check the position of the indicator in the loading bar
         function qte() {
             let barPosition = qteIndicatorBar.offsetLeft;
-            if (barPosition >= 180 && barPosition <= 220) {
+            if (barPosition >= 171 && barPosition <= 209) {
                 // case where its not the 1st time this stat is put in storage
                 if (localStorage.getItem(textNode.statEndSuccesQte)) {
                     let statToImprove = localStorage.getItem(textNode.statEndSuccesQte);
@@ -135,7 +135,7 @@ function showTextNode(textNodeIndex) {
 
     // page of end : bigger window of text
     if (textNode.end) {
-        document.getElementById("btn-skip-container").style.height = "155px";
+        document.getElementById("btn-skip-container").style.height = "225px"
     }
     
     // creation options
