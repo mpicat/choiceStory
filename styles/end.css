@@ -164,7 +164,7 @@ p {
 /* desktop */
 @media screen and (min-width: 992px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3.7rem;
         text-align: center;
     }
 
@@ -173,7 +173,7 @@ p {
     }
 
     h3, p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     section {
