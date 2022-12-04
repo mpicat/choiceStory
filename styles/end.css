@@ -176,16 +176,12 @@ p {
         font-size: 1.6rem;
     }
 
-    #container-left, .container-fade {
-        height: 40vh;
-    }
-
     section {
         padding: 40px 35% 0;
     }
 
     #btn-leave {
         font-size: 2rem;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
