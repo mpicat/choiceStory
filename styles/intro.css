@@ -56,6 +56,12 @@ a {
     margin: 0;
 }
 
+.container-start p {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 70px;
+}
+
 @keyframes clignote {
     0% {
         opacity: 1;
@@ -75,7 +81,7 @@ a {
     display: none;
 }
 
-p {
+.warning p {
     color: hsl(200, 100%, 50%);
     font-size: 1.8rem;
     font-weight: 300;
@@ -120,8 +126,17 @@ p {
     .warning {
         display: none;
     }
+    .container-start p {
+        font-size: 1.4rem;
+        padding-top: 200px;
+    }
+    
 }
 
 /* desktop */
 @media screen and (min-width: 992px) {
+    .container-start p {
+        font-size: 1.6rem;
+        padding-top: 400px;
+    }
 }

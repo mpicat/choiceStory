@@ -8,7 +8,7 @@ export default [
     },
     {
         id: 2,
-        text: "La Brigade Anti Magiques fête ses 60 ans aujourd'hui. Jamais les gouvernements n'ont collaboré aussi rapidement à échelle mondiale. En un sens, les Magiques nous ont sauvé, ils nous ont soudés contre un ennemi commun.",
+        text: "La Brigade Anti Magiques fête ses 60 ans aujourd'hui. Jamais les gouvernements n'ont collaboré aussi rapidement à échelle mondiale. En un sens, les Magiques nous ont aidé, ils nous ont soudés contre un ennemi commun.",
         background: "intro",
         skip: 3,
         options: [],
@@ -33,7 +33,7 @@ export default [
     },
     {
         id: 5,
-        text: `VLAM ! La porte s'ouvre d'un coup et une silhouette humaine sort à toute vitesse`,
+        text: `VLAM ! La porte s'ouvre d'un coup et une silhouette humaine sort à toute vitesse.`,
         background: "doorOpens",
         options: [],
         qteSpeed: 2,
@@ -59,7 +59,7 @@ export default [
                 nextText: 8
             },
             {
-                text: `"On va t'amener au QG, même un Magique a le droit à un procès"`,
+                text: `"On va t'amener au QG. Même un Magique a le droit à un procès."`,
                 setState: { leaveModred: true },
                 statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
@@ -69,7 +69,7 @@ export default [
     },
     {
         id: 7,
-        text: `Le suspect vous bouscule et vous tombez à la renverse en vous cognant la tête. Quand vous reprenez vos esprits, vous voyez Marco qui tient solidement l'homme. "Tu nous en auras fait baver, Modred"`,
+        text: `Le suspect vous bouscule et vous tombez à la renverse en vous cognant la tête. Quand vous reprenez vos esprits, vous voyez Marco qui tient solidement l'homme. "Tu nous en auras fait baver, Modred !"`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
         background: "doorOpens",
@@ -82,7 +82,7 @@ export default [
                 nextText: 8
             },
             {
-                text: `"On va t'amener au QG, même un Magique a le droit à un procès"`,
+                text: `"On va t'amener au QG, même un Magique a le droit à un procès."`,
                 setState: { leaveModred: true },
                 statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
@@ -91,7 +91,7 @@ export default [
     },
     {
         id: 8,
-        text: `"Attend ${localStorage.getItem('Nom')}, je voulais que tu le rencontres. C'est la première opportunité que l'on a de se voir tous les trois sans autre brigadier dans le secteur. Ils sont tous au QG pour les 60 ans de la Brigade."`,
+        text: `"Attend ${localStorage.getItem('Nom')} ! Je voulais que tu le rencontres... C'est la première opportunité que j'ai de t'avoir sans autre brigadier dans le secteur. Ils sont tous au QG pour les 60 ans de la Brigade."`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
         background: "doorNight",
@@ -119,7 +119,7 @@ export default [
     },
     {
         id: 11,
-        text: `Aussitôt, une douleur perçante vous traverse le crâne. "AAAAAAAAH !" Une vision vous traverse l'esprit. "Un laboratoire en ruines. Des traces de sang au sol et sur les murs..."`,
+        text: `Aussitôt, une douleur perçante vous traverse le crâne. "AAAAAAAAH !" Une vision. "Un laboratoire en ruines. Des traces de sang au sol et sur les murs..."`,
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
         background: "laboVision",
@@ -164,7 +164,7 @@ export default [
     },
     {
         id: 23,
-        text: `"Enfants nous avons été kidnappés et modifiés par les chercheurs de la Brigade pour effacer nos pouvoirs. Notre origine nous permet toujours de ressentir et de traquer plus facilement les Magiques"`,
+        text: `"Enfants nous avons été kidnappés et modifiés par les chercheurs de la Brigade pour effacer nos pouvoirs. Ils avaient besoin de Magiques, notre origine nous permet toujours de ressentir et de traquer plus facilement les nôtres."`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
         background: "intro",
@@ -182,7 +182,7 @@ export default [
     },
     {
         id: 25,
-        text: `"Tout correspondait, ils n'ont pas pu créer ces souvenirs. Même au sein de leur communauté, il n'existe pas une telle Magie."`,
+        text: `"Tout correspondait, ils n'ont pas pu créer ces souvenirs. Même au sein de leur communauté, il n'existe pas une telle magie."`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
         background: "intro",
@@ -196,10 +196,10 @@ export default [
         name: "Marco",
         background: "intro",
         options: [],
-        skip: 27,
+        skip: 272,
     },
     {
-        id: 27,
+        id: 272,
         text: `"Je leur ai parlé des visions que tu m'avais déjà partagées. Ils n'avaient jamais entendu un ancien Magique récupérer une partie de ses pouvoirs. Accompagne nous, tu pourrais faire changer les choses."`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
@@ -212,7 +212,7 @@ export default [
                 nextText: 22
             },
             {
-                text: `"Je ne peux pas vous arrêter tous les deux... Je retourne au QG"`,
+                text: `"Je ne peux pas vous arrêter tous les deux... Je retourne au QG."`,
                 setState: { noDenonceMate: true },
                 statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
@@ -222,7 +222,7 @@ export default [
     },
     {
         id: 14,
-        text: `Marco se défend bien. Il vous menace de son arme. Il sait que si vous le dénoncez, il finira en prison ou pire... Le combat devient plus acharné mais vous finissez par le blesser mortellement... `,
+        text: `Marco se défend bien. Il vous menace de son arme. Il sait que si vous le dénoncez, il finira en prison ou pire... Le combat devient plus acharné mais vous finissez par le blesser mortellement.`,
         background: "fightInvestigators",
         setState: { killMate: true },
         skip: 16,
@@ -236,7 +236,7 @@ export default [
         name: "Marco",
         background: "fightInvestigators",
         setState: { noKillMate: true },
-        skip: 16,
+        skip: 17,
         options: [],
     },
     {
@@ -264,8 +264,8 @@ export default [
     },
     {
         id: 19,
-        text: `"${localStorage.getItem('Nom')}, matricule B8522" Après quelques secondes les portes s'ouvrent. Deux brigadiers vous empoignent instantanément. Vous apercevez le Capitaine Kyle derrière eux.`,
-        textGirl: `"${localStorage.getItem('Nom')}, matricule B6742" Après quelques secondes les portes s'ouvrent. Deux brigadiers vous empoignent instantanément. Vous apercevez le Capitaine Kyle derrière eux.`,
+        text: `"${localStorage.getItem('Nom')}, matricule B8522" Après quelques secondes, les portes s'ouvrent. Deux brigadiers vous empoignent instantanément. Vous apercevez le Capitaine Kyle derrière eux.`,
+        textGirl: `"${localStorage.getItem('Nom')}, matricule B6742" Après quelques secondes, les portes s'ouvrent. Deux brigadiers vous empoignent instantanément. Vous apercevez le Capitaine Kyle derrière eux.`,
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
         background: "headquarters",
@@ -274,26 +274,26 @@ export default [
     },
     {
         id: 20,
-        text: `Eh bien "${localStorage.getItem('Nom')}, on vient profiter de la fête ? Vos capteurs nous ont montré que vous aviez été en contact très rapproché avec la Magie... Vous allez bien nous suivre pour faire quelques examens ?" Son ton semble plus menaçant qu'à l'ordinaire`,
+        text: `"Eh bien ${localStorage.getItem('Nom')}, on vient profiter de la fête ? Vos capteurs nous ont montré que vous aviez été en contact très rapproché avec la Magie... Vous allez bien nous suivre pour faire quelques examens ?" Son ton semble plus menaçant qu'à l'ordinaire`,
         imgSpeaker: "img/kyle.png",
         name: "Capitaine Kyle",
         background: "headquarters",
         options: [
             {
-                text: `"Je m'expliquerai à la Brigade, je vous suis"`,
+                text: `"Je m'expliquerai à la Brigade, je vous suis."`,
                 statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
                 nextText: 21
             },
             {
-                text: `Vous vous enfuyez par la porte d'où vous venez`,
+                text: `Vous vous enfuyez par la porte d'où vous venez.`,
                 requiredState: (currentState) => currentState.killMate,
                 statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 222
             },
             {
-                text: `Vous vous enfuyez par la porte d'où vous venez en embarquant une arme lourde sur le côté`,
+                text: `Vous vous enfuyez par la porte d'où vous venez en embarquant une arme lourde sur le côté.`,
                 requiredState: (currentState) => currentState.noDenonceMate || currentState.noKillMate,
                 setState: { armes: true },
                 statEndChoice: "Doutes dans la Brigade",
@@ -304,18 +304,18 @@ export default [
     },
     {
         id: 21,
-        text: `Vous commencer à vous diriger dans le labyrinthe du QG. Vous croisez beaucoup de brigadiers venus pour l'occasion. Après quelques minutes de marche, une explosion retentit. Des cris, puis des tirs fusent dans tout le bâtiment. "Les Magiques sont rentrés !, On nous attaque !"`,
+        text: `Vous commencer à vous diriger dans le labyrinthe du QG. Beaucoup de brigadiers sont venus pour l'occasion. Après quelques minutes de marche, une explosion retentit. Des cris, puis des tirs fusent dans tout le bâtiment. "Les Magiques sont rentrés !, On nous attaque !"`,
         background: "fightMagic",
         options: [
             {
-                text: `Vous profitez de la discorde pour vous cacher dans un placard`,
+                text: `Vous profitez de la discorde pour vous cacher dans un placard.`,
                 requiredState: (currentState) => currentState.noKillMate || currentState.noDenonceMate,
                 statEndChoice: "Mollesse",
                 bonusStatEndChoice: 1,
                 nextText: 27
             },
             {
-                text: `Vous profitez de la discorde pour vous cacher dans un placard`,
+                text: `Vous profitez de la discorde pour vous cacher dans un placard.`,
                 requiredState: (currentState) => currentState.killMate,
                 statEndChoice: "Mollesse",
                 bonusStatEndChoice: 1,
@@ -355,7 +355,7 @@ export default [
     },
     {
         id: 29,
-        text: `Vous percutez un Magique de plein fouet. Vous lui tirez dessus à plusieurs reprises avant qu'il ne puisse réagir. Vous l'entendez simplement murmurer : "Fuis.. fuis et sauve nos frères et soeurs...". Puis il s'éteind. Une énorme explosion résonne alors dans tout le bâtiment. Trop tard les flammes vous emportent...`,        
+        text: `Vous percutez un Magique de plein fouet. Vous lui tirez dessus à plusieurs reprises avant qu'il ne puisse réagir. Vous l'entendez simplement murmurer : "Fuis... fuis et sauve nos frères et soeurs..." Puis il s'éteind. Une énorme explosion résonne alors dans tout le bâtiment. Trop tard les flammes vous emportent...`,        
         background: "fightMagic",
         end: 1,
         options: [
@@ -390,7 +390,7 @@ export default [
     },
     {
         id: 30,
-        text: `"Les Magiques se cachaient dans les égoûts depuis le début?..." `,
+        text: `"Les Magiques se cachaient dans les égoûts depuis le début ?..." `,
         background: "meetingMagic",
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
@@ -399,7 +399,7 @@ export default [
     },
     {
         id: 31,
-        text: `"On te cherche depuis longtemps ${localStorage.getItem('Nom')}. Je ne sais pas ce que Marco t'as dit, mais tu sais qu'aucun humain n'a de vision." `,
+        text: `"On te cherche depuis longtemps ${localStorage.getItem('Nom')}. Je ne sais pas ce que Marco t'as dit, mais tu sais qu'aucun humain n'a de vision. Tu n'est pas des leurs." `,
         background: "meetingMagic",
         imgSpeaker: "img/sorcerer3.png",
         name: "Jeune Magique",
@@ -444,7 +444,7 @@ export default [
     },
     {
         id: 36,
-        text: `"Tu es le symbole du lien entre les brigadiers et les Magiques ${localStorage.getItem('Nom')}. Sans les brigadiers, les Humains ne nous trouverons plus et nous pourrons vivre de nouveau secrètement. Nous ne ferons pas les mêmes erreurs."`,
+        text: `"Tu es le symbole du lien entre les brigadiers et les Magiques ${localStorage.getItem('Nom')}. Sans les brigadiers, l'Humanité ne nous trouvera plus et nous pourrons vivre de nouveau secrètement. Nous ne ferons pas les mêmes erreurs."`,
         background: "meetingMagic",
         imgSpeaker: "img/sorcerer3.png",
         name: "Jeune Magique",
@@ -462,20 +462,20 @@ export default [
     },
     {
         id: 38,
-        text: `"Nous allons attaquer le laboratoire où les brigadiers sont 'élevés'. Les souvenirs des brigadiers y sont conservés, nous pourrons vous rendre vos passés. Mais nous avons besoin d'un brigadier pour rentrer dans ce labo et ils se méfient déjà de Marco."`,
+        text: `"Nous allons attaquer le laboratoire où les brigadiers sont 'élevés'. Les souvenirs des brigadiers y sont conservés, nous pourrons vous rendre vos passés. Mais nous avons besoin de l'un de vous pour rentrer dans ce labo et ils se méfient déjà de Marco."`,
         background: "meetingMagic",
         imgSpeaker: "img/sorcerer3.png",
         name: "Jeune Magique",
         options: [
             {
-                text: `Les conduire de bonne volonté`,
+                text: `Les conduire de bonne volonté.`,
                 setState: { bonneVolonte: true },
                 statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 39
             },
             {
-                text: `Les conduire au laboratoire, mais prévenir les chercheurs sur le chemin`,
+                text: `Les conduire au laboratoire, mais prévenir les chercheurs sur le chemin.`,
                 setState: { semblant: true },
                 statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
@@ -488,20 +488,20 @@ export default [
         background: "fightMagic",
         options: [
             {
-                text: `Vous êtes submergés... l'opération est un échec...`,
+                text: `Vous êtes submergés...`,
                 statEndChoice: "Doute dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 40
             },
             {
-                text: `Vous êtes submergés... vous aviez bien fait de prévenir vos collègues de votre arrivée !`,
+                text: `Vous aviez bien fait de prévenir vos collègues de votre arrivée !`,
                 requiredState: (currentState) => currentState.semblant,
                 statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 41
             },
             {
-                text: `Votre arme lourde dérobée va faire des miracles !`,
+                text: `Vous avez bien fait de prendre cette arme lourde.`,
                 requiredState: (currentState) => currentState.armes,
                 statEndChoice: "Doute dans la Brigade",
                 bonusStatEndChoice: 1,
@@ -535,23 +535,23 @@ export default [
     },
     {
         id: 42,
-        text: `Les chercheurs s'opposent à votre attaque. La lutte s'intensifie, mais vous faites des ravages... Vous en voyez un pointer une arme anti-Magiques sur vous...`,
+        text: `Les chercheurs s'opposent à votre attaque. La lutte s'intensifie, mais vous faites des ravages... Vous en voyez un pointer une arme anti-Magiques sur vous.`,
         background: "fightMagic",
         options: [
             {
-                text: `Il tire dans votre direction`,
+                text: `Il tire dans votre direction.`,
                 requiredState: (currentState) => currentState.leaveModred,
                 nextText: 43
             },
             {
-                text: `Il tire dans votre direction`,
+                text: `Il tire dans votre direction.`,
                 requiredState: (currentState) => currentState.killModred,
                 nextText: 44
             }],
     },
     {
         id: 43,
-        text: `Vous sentez quelqu'un vous pousser dans le dos. Modred ! C'est lui qui prend la balle, il s'effondre à vos pieds... Il vous addresse ses derniers mots : "Sauve nous, sauve ton peuple..."`,
+        text: `Vous sentez quelqu'un vous pousser dans le dos. Modred ! C'est lui qui prend la balle, il s'effondre à vos pieds... Il vous adresse ces derniers mots : "Sauve nous, sauve ton peuple..."`,
         background: "fightMagic",
         imgSpeaker: "img/modred.png",
         name: "Modred",
@@ -564,7 +564,7 @@ export default [
     },
     {
         id: 44,
-        text: `Le tir vous frappe en plein tête. Une sensation de brûlure se propage dans tout votre corps, puis vos forces vous quittent rapidement. Ces projectiles sont sensés être innofensifs pour les Humains. Vous aurez t'on menti toute votre vie ?`,
+        text: `Le tir vous frappe en pleine tête. Une sensation de brûlure se propage dans tout votre corps, puis vos forces vous quittent rapidement. Ces projectiles sont sensés être innofensifs pour les Humains. Vous aurez t'on menti toute votre vie ?`,
         background: "fightMagic",
         end: 1,
         options: [

@@ -11,17 +11,19 @@ songElement.play();
 
 // Creation of table of stats
 function setStatEnd(stat) {
-    let statEnd = document.createElement('div');
-    let titleStatEnd = document.createElement('h3');
-    let valueStatEnd = document.createElement('p');
-
-    statEnd.setAttribute('class', 'statEnd');
-    titleStatEnd.innerHTML = stat;
-    valueStatEnd.innerHTML = localStorage.getItem(stat);
-
-    containerStatEnd.appendChild(statEnd);
-    statEnd.appendChild(titleStatEnd);
-    statEnd.appendChild(valueStatEnd);
+    if (localStorage.getItem(stat)) {
+        let statEnd = document.createElement('div');
+        let titleStatEnd = document.createElement('h3');
+        let valueStatEnd = document.createElement('p');
+    
+        statEnd.setAttribute('class', 'statEnd');
+        titleStatEnd.innerHTML = stat;
+        valueStatEnd.innerHTML = localStorage.getItem(stat);
+    
+        containerStatEnd.appendChild(statEnd);
+        statEnd.appendChild(titleStatEnd);
+        statEnd.appendChild(valueStatEnd);
+    }
 }
 
 // TODO add each stat who exists in the game
