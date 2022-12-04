@@ -37,10 +37,10 @@ export default [
         background: "doorOpens",
         options: [],
         qteSpeed: 2,
-        statEndSuccesQte: "Vivace",
+        statEndSuccesQte: "Vivacité",
         bonusStatEndSuccesQte: 1,
         nextTextIfSucces: 6,
-        statEndFailQte: "Mollasson",
+        statEndFailQte: "Mollesse",
         bonusStatEndFailQte: 1,
         nextTextIfFail: 7,
     },
@@ -61,7 +61,7 @@ export default [
             {
                 text: `"On va t'amener au QG, même un Magique a le droit à un procès"`,
                 setState: { leaveModred: true },
-                statEndChoice: "Patience",
+                statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
                 nextText: 8
             }
@@ -84,7 +84,7 @@ export default [
             {
                 text: `"On va t'amener au QG, même un Magique a le droit à un procès"`,
                 setState: { leaveModred: true },
-                statEndChoice: "Patience",
+                statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
                 nextText: 8
             }]
@@ -127,14 +127,14 @@ export default [
             {
                 text: `"Marco, enfoiré de traître... je vais en finir avec vous deux..."`,
                 setState: { denonceMate: true },
-                statEndChoice: "Loyal à la Brigade",
+                statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 12
             },
             {
                 text: `"Marco... qu'est ce qu'il a voulu dire par 'Tu avais raison ?' Qu'est ce qu'il m'arrive ?"`,
                 setState: { noDenonceMate: true },
-                statEndChoice: "Patience",
+                statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 13
             }
@@ -146,10 +146,10 @@ export default [
         background: "fightInvestigators",
         options: [],
         qteSpeed: 1.7,
-        statEndSuccesQte: "Vivace",
+        statEndSuccesQte: "Vivacité",
         bonusStatEndSuccesQte: 1,
         nextTextIfSucces: 14,
-        statEndFailQte: "Mollasson",
+        statEndFailQte: "Mollesse",
         bonusStatEndFailQte: 1,
         nextTextIfFail: 15,
     },
@@ -207,14 +207,14 @@ export default [
         options: [
             {
                 text: `"Si je sens une moindre odeur de piège, ce sera un carnage..."`,
-                statEndChoice: "Patience",
+                statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 22
             },
             {
                 text: `"Je ne peux pas vous arrêter tous les deux... Je retourne au QG"`,
                 setState: { noDenonceMate: true },
-                statEndChoice: "Loyal à la Brigade",
+                statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 17
             }
@@ -281,14 +281,14 @@ export default [
         options: [
             {
                 text: `"Je m'expliquerai à la Brigade, je vous suis"`,
-                statEndChoice: "Loyal à la Brigade",
+                statEndChoice: "Justice",
                 bonusStatEndChoice: 1,
                 nextText: 21
             },
             {
                 text: `Vous vous enfuyez par la porte d'où vous venez`,
                 requiredState: (currentState) => currentState.killMate,
-                statEndChoice: "Doute en l'Humanité",
+                statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 222
             },
@@ -296,7 +296,7 @@ export default [
                 text: `Vous vous enfuyez par la porte d'où vous venez en embarquant une arme lourde sur le côté`,
                 requiredState: (currentState) => currentState.noDenonceMate || currentState.noKillMate,
                 setState: { armes: true },
-                statEndChoice: "Doute en l'Humanité",
+                statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 222
             }
@@ -310,20 +310,20 @@ export default [
             {
                 text: `Vous profitez de la discorde pour vous cacher dans un placard`,
                 requiredState: (currentState) => currentState.noKillMate || currentState.noDenonceMate,
-                statEndChoice: "Patience",
+                statEndChoice: "Mollesse",
                 bonusStatEndChoice: 1,
                 nextText: 27
             },
             {
                 text: `Vous profitez de la discorde pour vous cacher dans un placard`,
                 requiredState: (currentState) => currentState.killMate,
-                statEndChoice: "Patience",
+                statEndChoice: "Mollesse",
                 bonusStatEndChoice: 1,
                 nextText: 28
             },
             {
                 text: `Vous vous élancez en directions des tirs. "Au combat !"`,
-                statEndChoice: "Loyal à la Brigade",
+                statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 29
             }
@@ -470,14 +470,14 @@ export default [
             {
                 text: `Les conduire de bonne volonté`,
                 setState: { bonneVolonte: true },
-                statEndChoice: "Doutes en la Brigade",
+                statEndChoice: "Doutes dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 39
             },
             {
                 text: `Les conduire au laboratoire, mais prévenir les chercheurs sur le chemin`,
                 setState: { semblant: true },
-                statEndChoice: "Loyal à la Brigade",
+                statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 39
             }],
@@ -496,14 +496,14 @@ export default [
             {
                 text: `Vous êtes submergés... vous aviez bien fait de prévenir vos collègues de votre arrivée !`,
                 requiredState: (currentState) => currentState.semblant,
-                statEndChoice: "Doute dans la Brigade",
+                statEndChoice: "Haine des Magiques",
                 bonusStatEndChoice: 1,
                 nextText: 41
             },
             {
                 text: `Votre arme lourde dérobée va faire des miracles !`,
                 requiredState: (currentState) => currentState.armes,
-                statEndChoice: "Haine des brigadiers",
+                statEndChoice: "Doute dans la Brigade",
                 bonusStatEndChoice: 1,
                 nextText: 42
             }],

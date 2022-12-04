@@ -25,7 +25,11 @@ function setStatEnd(stat) {
 }
 
 // TODO add each stat who exists in the game
-setStatEnd('Logique');
+setStatEnd('Vivacité');
+setStatEnd('Mollesse');
+setStatEnd('Haine des Magiques');
+setStatEnd('Justice');
+setStatEnd('Doutes dans la Brigade');
 
 function getCharacterImg() {
     let characterChoosed = localStorage.getItem('Nom');
