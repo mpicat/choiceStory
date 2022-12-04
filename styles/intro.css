@@ -121,7 +121,7 @@ a {
     }
     .container-start {
         display: flex;
-        padding-top: 3%;
+        padding-top: 8%;
     }
     .warning {
         display: none;
