@@ -109,8 +109,8 @@ export default [
     },
     {
         id: 10,
-        text: `"Tu avais raison Marco, ça va être compliqué de le rallier à notre cause. Ils ont bien travaillé sur celui-là". Puis il vous regarde fixement dans les yeux`,
-        textGirl: `"Tu avais raison Marco, ça va être compliqué de la rallier à notre cause. Ils ont bien travaillé sur celle-là". Puis il vous regarde fixement dans les yeux`,
+        text: `"Tu avais raison Marco, ça va être compliqué de le rallier à notre cause. Ils ont bien travaillé sur celui-là". Puis il vous regarde fixement dans les yeux.`,
+        textGirl: `"Tu avais raison Marco, ça va être compliqué de la rallier à notre cause. Ils ont bien travaillé sur celle-là". Puis il vous regarde fixement dans les yeux.`,
         imgSpeaker: "img/modred.png",
         name: "Modred",
         background: "doorNight",
@@ -199,7 +199,7 @@ export default [
         skip: 27,
     },
     {
-        id: 26,
+        id: 27,
         text: `"Je leur ai parlé des visions que tu m'avais déjà partagées. Ils n'avaient jamais entendu un ancien Magique récupérer une partie de ses pouvoirs. Accompagne nous, tu pourrais faire changer les choses."`,
         imgSpeaker: "img/mate.png",
         name: "Marco",
