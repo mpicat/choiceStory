@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        text: "2191, New York. Cela va faire maintenant 60 ans que les Magiques se sont dévoilés à l'Humanité. Ils pensaient bien faire et collaborer avec nous. C'était mal connaître les humains...",
+        text: "2191, New York. Cela va faire maintenant 60 ans que les Magiques; les humains dôtés de pouvoirs surnaturels; se sont dévoilés à l'Humanité. Ils pensaient bien faire et collaborer avec nous. C'était mal connaître les humains...",
         background: "intro",
         skip: 2,
         options: [],
@@ -46,7 +46,7 @@ export default [
     },
     {
         id: 6,
-        text: `Vous arrivez à esquiver l'homme qui sort et le plaquez au sol. "Enfin on te tient Modred ! Après deux mois de traque, fallait vraiment con pour ici !"`,
+        text: `Vous arrivez à esquiver l'homme qui sort et le plaquez au sol. "Enfin on te tient Modred ! Après deux mois de traque, fallait vraiment être con pour revenir ici !"`,
         imgSpeaker: localStorage.getItem('Img'),
         name: localStorage.getItem('Nom'),
         background: "doorOpens",
